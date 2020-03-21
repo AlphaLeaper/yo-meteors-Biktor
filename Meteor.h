@@ -1,16 +1,16 @@
 #pragma once
+#include "DateTime.h"
 
 class Meteor
 {
 public:
-    Meteor(  );
+	Meteor( DateTime dataTime, double solar_longitude, double RA_geometric, double Decl_geometric, double V_geometric, double V_initial);
 public:
-
 private:
-    //dataTime;
-    //solar_longitude;
-    //RA_geocentric;
-    //Decl_geocentric;
-    //V_geocentric;
-    //V_initial;
+	DateTime dataTime;
+	double solar_longitude;
+	double RA_geometric;
+	double Decl_geometric;
+	double V_geometric;
+	double V_initial;
 };
